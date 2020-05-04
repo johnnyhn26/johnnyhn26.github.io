@@ -6,6 +6,16 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+@font-face {
+    font-family: 'myfont'; /*a name to be used later, my edit*/
+    src: url('./Fonts/CircularStd-Medium.otf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'myfont2'; /*a name to be used later, my edit*/
+    src: url('./Fonts/CircularStd-Book.otf'); /*URL to font*/
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -2943,7 +2953,7 @@ input, select, textarea {
 
 		.wrapper.style1 {
 			background-color: #fba503;
-			color: #d1e5f9;
+			color: #ffffff;
 		}
 
 			.wrapper.style1 input[type="submit"],
@@ -3011,7 +3021,7 @@ input, select, textarea {
 
 			.wrapper.style1 input[type="checkbox"] + label,
 			.wrapper.style1 input[type="radio"] + label {
-				color: #d1e5f9;
+				color: #ffffff;
 			}
 
 				.wrapper.style1 input[type="checkbox"] + label:before,
@@ -3106,7 +3116,7 @@ input, select, textarea {
 			}
 
 			.wrapper.style1 input, .wrapper.style1 select, .wrapper.style1 textarea {
-				color: #d1e5f9;
+				color: #ffffff;
 			}
 
 			.wrapper.style1 a {
@@ -3612,7 +3622,7 @@ input, select, textarea {
 
 	#header {
 		background-color: #fba503;
-		color: #d1e5f9;
+		color: #ffffff;
 		padding: 4.5em 0 2.5em 0 ;
 		-moz-align-items: center;
 		-webkit-align-items: center;
@@ -3626,7 +3636,7 @@ input, select, textarea {
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
 		justify-content: center;
-		background-image: url("images/overlay.png"), url("images/pattern-size1.svg");
+		/*background-image: url("images/overlay.png"), url("images/pattern-size1.svg");*/
 		background-position: top left, center center;
 		background-attachment: fixed, fixed;
 		background-size: auto, cover;
@@ -3699,7 +3709,7 @@ input, select, textarea {
 
 		#header input[type="checkbox"] + label,
 		#header input[type="radio"] + label {
-			color: #d1e5f9;
+			color: #ffffff;
 		}
 
 			#header input[type="checkbox"] + label:before,
@@ -3794,7 +3804,7 @@ input, select, textarea {
 		}
 
 		#header input, #header select, #header textarea {
-			color: #d1e5f9;
+			color: #ffffff;
 		}
 
 		#header a {
@@ -3891,7 +3901,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			#header {
-				background-image: url("images/overlay.png"), url("images/pattern-size2.svg");
+			/*	background-image: url("images/overlay.png"), url("images/pattern-size2.svg");*/
 			}
 
 		}
@@ -3942,7 +3952,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#header {
-				background-image: url("images/overlay.png"), url("images/pattern-size3.svg");
+			/*	background-image: url("images/overlay.png"), url("images/pattern-size3.svg");*/
 			}
 
 				#header h1 {
