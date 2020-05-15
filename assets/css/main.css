@@ -431,7 +431,7 @@ input, select, textarea {
 		/*MY EDITS */
 
 		.row > .col-cust1 {
-			width: 30%;
+			width: 30%; 
 			margin-left: 20%;
 		}
 
@@ -615,6 +615,32 @@ input, select, textarea {
 				.row.gtr-200.gtr-uniform > * {
 					padding-top: 3em;
 				}
+
+		/*MY EDITS */
+		
+		@media screen only {
+
+			.row > .col-cust1 {
+				width: 40%;
+				margin-left: 10%;
+			}
+
+			.row > .off-cust1 {
+				margin-left: 10%;
+			}
+
+			.row > .col-cust2 {
+				width: 40%;
+				margin-right: 10%;
+			}
+
+			.row > .off-cust2 {
+				margin-left: 10%;
+			}
+
+		}
+		
+		/*END OF MY EDITS */
 
 		@media screen and (max-width: 1680px) {
 
