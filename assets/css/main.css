@@ -428,6 +428,28 @@ input, select, textarea {
 			margin-left: 33.33333%;
 		}
 
+		/*MY EDITS */
+
+		.row > .col-cust1 {
+			width: 25%;
+			margin-left: 25%;
+		}
+
+		.row > .off-cust1 {
+			margin-left: 25%;
+		}
+
+		.row > .col-cust2 {
+			width: 25%;
+			margin-right: 15%;
+		}
+
+		.row > .off-cust2 {
+			margin-left: 25%;
+		}
+
+		/*END OF MY EDITS */
+
 		.row > .col-5 {
 			width: 41.66667%;
 		}
@@ -2321,6 +2343,21 @@ input, select, textarea {
 				width: 100%;
 			}
 
+		/* MY EDITS */
+
+		.image.fit2 {
+			display: block;
+			margin: 0em 0em 2em 9em;
+			width: 100%;
+			border: solid transparent 
+		}
+
+			.image.fit2 img {
+				width: 100%;
+			}
+
+		/* End of my EDITS */
+
 		.image.main {
 			display: block;
 			margin: 0 0 3em 0;
@@ -2540,6 +2577,8 @@ input, select, textarea {
 			ul.actions.fit.stacked {
 				width: 100%;
 			}
+
+
 
 		@media screen and (max-width: 480px) {
 
