@@ -2872,6 +2872,61 @@ input, select, textarea {
 
 	}
 
+
+	/* Custom Spotlight2 */
+
+
+	.spotlight2 {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		margin: 0 0 2em 0;
+	}
+
+			.spotlight2 .image {
+			width: 16%;
+			border-radius: 100%;
+			margin: 0 0 0 36.5em;
+			display: ;
+		}
+
+			.spotlight2 .image img {
+				display: block;
+				border-radius: 100%;
+				width: 100%;
+			}
+
+@media screen and (max-width: 736px) and (orientation: landscape) {
+
+		.spotlight2 .image {
+			margin: 0 2em 0 0;
+		}
+
+	}
+
+	@media screen and (max-width: 736px) and (orientation: portrait) {
+
+		.spotlight2 {
+			-moz-flex-direction: column !important;
+			-webkit-flex-direction: column !important;
+			-ms-flex-direction: column !important;
+			flex-direction: column !important;
+		}
+
+			.spotlight2 .image {
+				width: 100%;
+				max-width: 60%;
+				margin: 0 0 0 0 !important;
+			}
+
+	}
+		
+
 /* Table */
 
 	.table-wrapper {
