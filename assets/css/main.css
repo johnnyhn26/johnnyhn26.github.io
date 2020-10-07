@@ -2901,10 +2901,11 @@ input, select, textarea {
 				width: 100%;
 			}
 
-@media screen and (max-width: 736px) and (orientation: landscape) {
+@media screen and (max-width: 900px) and (orientation: landscape) {
 
 		.spotlight2 .image {
-			margin: 0 2em 0 0;
+			margin: 0 2em 0 14.5em;
+			width:27%;
 		}
 
 	}
