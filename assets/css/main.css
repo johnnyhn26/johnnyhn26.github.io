@@ -91,12 +91,13 @@ input, select, textarea {
 {
     position: relative;
     overflow-x: hidden;
+	overflow-y: hidden;
 	
 	text-align: center;
 	margin: 0 auto;
     
     width: 800px;
-    height: 500px;
+    height: 600px;
 }
 #content #page1
 {

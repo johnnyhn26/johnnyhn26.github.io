@@ -18,7 +18,7 @@
 		<link rel="icon" href="images/glimpse-icon.png">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	</head>
 	
 	<body class="is-preload">
@@ -36,11 +36,10 @@
 		<!-- One  -->
 		<section id="one" class="wrapper style3">
 			<div class="inner">
-				<form>
-					<div id="content">
-					
-						<!-- Page 1 -->
-						<div id="page1">
+				<div id="content">
+					<!-- Page 1 -->
+					<form name="page1form" id="page1form" onsubmit="return showPage2();">
+						<div id="page1" name="page1">
 							<header class="major">
 								<h3>To start, we need some of your contact info</h3>
 							</header>
@@ -62,8 +61,10 @@
 							<!-- Address -->
 							<input type="text" id="addressinput" name="addressinput" placeholder="Address" required><br>
 						</div>
-						
-						<!-- Page 2 -->
+					</form>
+					
+					<!-- Page 2 -->
+					<form name="page2form" id="page2form" onsubmit="return showPage3();">
 						<div id="page2">
 							<header class="major">
 								<h3>Then we need the details of your venue</h3>
@@ -88,8 +89,10 @@
 							
 							<a href="https://www.google.com/maps/" target="_blank">You can use Google Maps for easy coordinates<br> Simply right click on the center of your venue</a>
 						</div>
-						
-						<!-- Page 3 -->
+					</form>
+					
+					<!-- Page 3 -->
+					<form name="page3form" id="page3form" onsubmit="return showPage4();">
 						<div id="page3">
 							<header class="major">
 								<h3>Now let's talk about your event</h3>
@@ -112,8 +115,10 @@
 								</div>
 							</div>
 						</div>
-						
-						<!-- Page 4 -->
+					</form>
+					
+					<!-- Page 4 -->
+					<form name="page4form" id="page4form" onsubmit="return showPage5();">
 						<div id="page4">
 							<header class="major">
 								<h3>Some extra details about your event</h3>
@@ -143,8 +148,10 @@
 								</div>
 							</div>
 						</div>
-						
-						<!-- Page 5 -->
+					</form>
+					
+					<!-- Page 5 -->
+					<form name="page5form" id="page5form" onsubmit="return showPage6();">
 						<div id="page5">
 							<header class="major">
 								<h3>How should users find you on Glimpse</h3>
@@ -165,8 +172,10 @@
 								<span style="font-size:20px;">-</span> 
 							</button>
 						</div>
-						
-						<!-- Page 6 -->
+					</form>
+					
+					<!-- Page 6 -->
+					<form name="page6form" id="page6form" onsubmit="return showPage7();">
 						<div id="page6">
 							<header class="major">
 								<h3>Express your creativity with your pins</h3>
@@ -220,8 +229,10 @@
 								<span style="font-size:20px;">-</span> 
 							</button>
 						</div>
-						
-						<!-- Page 7 -->
+					</form>
+					
+					<!-- Page 7 -->
+					<form name="page7form" id="page7form" onsubmit="return showPage8();">
 						<div id="page7">
 							<header class="major">
 								<h3>You're at the finish line</h3>
@@ -229,7 +240,7 @@
 							
 							<div style="text-align: center;">
 							
-								<input type="checkbox" name="terms" id="terms">
+								<input type="checkbox" name="terms" id="terms" required>
 								<label for="terms">I have read and agree to the <a href="TOC.html" target="_blank">Terms and Conditions and Privacy Policy</a></label>
 						
 								<div class="g-recaptcha" data-sitekey="6LfoRbUaAAAAACCNzE-Ekn4h0ZBLngdiYUs0HvkW" style="display: inline-block;"></div>
@@ -237,23 +248,23 @@
 							<br/>
 							<input type="submit" value="Submit">
 						</div>
-						
-						<!-- Page 8 -->
-						<div id="page8">
-							<header class="major">
-								<h3>Connecting with Glimpse's database...</h3>
-							</header>
-						</div>
-					</div>
+					</form>
 					
-					<div id="controls">
-						<!-- Back Button -->
-						<input type="button" value="Back" id="backbutton" style="float: left; display: none;">
-						
-						<!-- Next Button -->
-						<input type="button" value="Next" id="nextbutton" style="float: right;" onclick="showPage2()">
+					<!-- Page 8 -->
+					<div id="page8">
+						<header class="major">
+							<h3 id="majorheader">One moment please...</h3>
+						</header>
 					</div>
-				</form>
+				</div>
+				
+				<div id="controls">
+					<!-- Back Button -->
+					<input type="button" value="Back" id="backbutton" style="float: left; display: none;">
+					
+					<!-- Next Button -->
+					<input type="submit" value="Next" id="nextbutton" style="float: right;" form="page1form">
+				</div>
 			</div>
 		</section>
 
